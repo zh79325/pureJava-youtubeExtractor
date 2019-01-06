@@ -22,7 +22,14 @@
 	</appenders>
 
 	<loggers>
+
 		<AsyncLogger name="org.netty" level="info" additivity="false"
+					 includeLocation="true">
+			<AppenderRef ref="asynLogger" />
+			<AppenderRef ref="Console" />
+		</AsyncLogger>
+
+		<AsyncLogger name="cn.wowspeeder" level="debug" additivity="false"
 			includeLocation="true">
 			<AppenderRef ref="asynLogger" />
 			<AppenderRef ref="Console" />

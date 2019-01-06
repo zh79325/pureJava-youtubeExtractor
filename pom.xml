@@ -28,11 +28,17 @@
                 <artifactId>shadowsocks</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>potato.youtube.extractor</groupId>
+                <artifactId>shadowsocks-java</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <modules>
         <module>shadowsocks</module>
         <module>youtube</module>
+        <module>shadowsocks-java</module>
     </modules>
 
 

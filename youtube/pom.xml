@@ -16,6 +16,10 @@
             <groupId>potato.youtube.extractor</groupId>
             <artifactId>shadowsocks</artifactId>
         </dependency>
+        <dependency>
+            <groupId>potato.youtube.extractor</groupId>
+            <artifactId>shadowsocks-java</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

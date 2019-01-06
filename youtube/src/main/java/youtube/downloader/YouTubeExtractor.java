@@ -197,7 +197,7 @@ public abstract class YouTubeExtractor extends AsyncTask<String, Void, Map<Integ
                 + URLEncoder.encode("https://youtube.googleapis.com/v/" + videoID, "UTF-8");
 
         String dashMpdUrl = null;
-        String streamMap;
+        String streamMap=null;
         BufferedReader reader = null;
         URL getUrl = new URL(ytInfoUrl);
         if (LOGGING)
@@ -210,9 +210,10 @@ public abstract class YouTubeExtractor extends AsyncTask<String, Void, Map<Integ
             reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
             streamMap = reader.readLine();
 
-        } finally {
-            if (reader != null)
+        }finally{
+            if (reader != null) {
                 reader.close();
+            }
             urlConnection.disconnect();
         }
         Matcher mat;

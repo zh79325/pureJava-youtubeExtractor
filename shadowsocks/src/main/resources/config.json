@@ -1,7 +1,7 @@
 {
-  "server": "103.114.161.158",
+  "server": "103.114.161.160",
   "port_password": {
-    "7788": "dongtaiwang.com"
+    "2233": "ntdtv.com"
   },
   "method": "aes-256-cfb",
   "obfs": "origin",
